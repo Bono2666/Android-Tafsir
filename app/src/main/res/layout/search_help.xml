@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/transparent"
+        android:focusable="true"
+        android:hint="Cari bantuan"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/hint"
+        android:textSize="24dp"
+        app:fontFamily="@font/ubuntu_bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/isabelline"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/search_shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:shimmer_auto_start="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/gainsboro"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true">
+
+                <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/lightGray" />
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_below="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pertanyaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="48dp"
+                            android:layout_marginBottom="40dp"
+                            android:text=""
+                            android:textColor="@color/outerSpace"
+                            android:textIsSelectable="true"
+                            android:textSize="32dp"
+                            app:fontFamily="@font/ubuntu_bold"
+                            app:lineHeight="36dp" />
+
+                        <WebView
+                            android:id="@+id/jawaban_Web"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pertanyaan"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none"/>
+
+                        <Space
+                            android:layout_below="@+id/jawaban_Web"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" />
+
+                    </RelativeLayout>
+                </ScrollView>
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

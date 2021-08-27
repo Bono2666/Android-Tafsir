@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Pengaturan"
+                android:textSize="28dp"
+                android:textColor="@color/outerSpace"
+                app:fontFamily="@font/ubuntu_bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="PENGATURAN LAYAR"
+                android:textSize="14dp"
+                android:textColor="@color/sonicSilver"
+                app:fontFamily="@font/ubuntu"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lights_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Biarkan cahaya tetap menyala"
+                    android:textSize="18dp"
+                    android:textColor="@color/outerSpace"
+                    app:fontFamily="@font/ubuntu"/>
+
+                <TextView
+                    android:id="@+id/lights_desc"
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lights_caption"
+                    android:layout_marginTop="10dp"
+                    android:text="Aktifkan cahaya layar hp anda agar selalu menyala."
+                    android:textSize="14dp"
+                    android:textColor="@color/outerSpace"
+                    app:fontFamily="@font/ubuntu"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/lights_desc"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/lightGray"/>
+
+                <RelativeLayout
+                    android:id="@+id/light_switch"
+                    android:layout_width="40.41dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_alignParentEnd="true">
+                    <ImageView
+                        android:id="@+id/disable_track"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_disable_track"/>
+                    <ImageView
+                        android:id="@+id/disable_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_disable"/>
+                    <ImageView
+                        android:id="@+id/enable_track"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_enable_track"
+                        android:alpha="0.0"/>
+                    <ImageView
+                        android:id="@+id/enable_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_enable"
+                        android:alpha="0.0"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="PENGATURAN APLIKASI"
+                android:textSize="14dp"
+                android:textColor="@color/sonicSilver"
+                app:fontFamily="@font/ubuntu"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/download_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/download_icon" />
+
+                    <TextView
+                        android:id="@+id/download_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Download"
+                        android:textColor="@color/outerSpace"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/download_desc"
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/download_btn"
+                    android:layout_marginTop="10dp"
+                    android:text="Simpan bacaan tafsir ke hp anda, sehingga anda tidak membutuhkan koneksi internet untuk membukanya."
+                    android:textSize="14dp"
+                    android:textColor="@color/outerSpace"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/download_desc"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/lightGray"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="DUKUNGAN"
+                android:textSize="14dp"
+                android:textColor="@color/sonicSilver"
+                app:fontFamily="@font/ubuntu"/>
+
+            <RelativeLayout
+                android:id="@+id/help_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Bantuan"
+                    android:textSize="18dp"
+                    android:textColor="@color/outerSpace"
+                    app:fontFamily="@font/ubuntu"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/help_icon"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

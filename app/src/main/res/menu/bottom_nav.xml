@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/book_icon"
+        android:title="Beranda"/>
+    <item
+        android:id="@+id/nav_bookmark"
+        android:icon="@drawable/bookmark_icon"
+        android:title="Bookmark"/>
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/setting_icon"
+        android:title="Pengaturan"/>
+
+</menu>

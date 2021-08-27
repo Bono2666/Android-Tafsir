@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_back_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/search_button"
+            android:layout_width="192dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_radius_24"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/search_icon"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/cari_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/search_icon"
+                android:maxLines="1"
+                app:fontFamily="@font/ubuntu_bold"
+                android:text="Terakhir dibaca"
+                android:textSize="14dp"
+                android:textColor="@color/outerSpace"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar_back_search">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:id="@+id/filter_button"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/juz_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="26dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/stroke_radius_24">
+
+                    <TextView
+                        android:id="@+id/juz_text_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="Juz"
+                        android:textSize="14dp"
+                        android:textColor="@color/outerSpace"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/surat_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/stroke_radius_24"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/surat_text_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="Surat"
+                        android:textSize="14dp"
+                        android:textColor="@color/outerSpace"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_below="@+id/filter_button"
+                app:fontFamily="@font/ubuntu_bold"
+                android:textSize="24dp"
+                android:text="Tafsir terakhir yang anda baca"
+                android:textColor="@color/outerSpace"
+                app:lineHeight="32dp"/>
+
+<!--            GridLayout hrs di dalam RelativeLayout biar data baris kedua bisa keliatan-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lastread_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="26dp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:clickable="true">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

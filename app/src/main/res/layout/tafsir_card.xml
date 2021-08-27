@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                <WebView
+                    android:id="@+id/surat_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_toRightOf="@+id/back_button"
+                    android:layout_centerVertical="true"
+                    android:scrollbars="none"/>
+
+                <TextView
+                    android:id="@+id/surat_arabic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@+id/back_button"
+                    android:layout_centerVertical="true"
+                    app:fontFamily="@font/uthman_taha"
+                    android:text="سُورَةُ الفَاتِحَةِ"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/hal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/bookmark_ic"
+                    app:fontFamily="@font/ubuntu_medium"
+                    android:text="5"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/bookmark_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/ic_bookmark_border_black_24dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/lightGray"/>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/tafsir_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp">
+
+                    <TextView
+                        android:id="@+id/no_surat_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/nm_surat_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/no_buku_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/periode_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/surat_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/juz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/no_sub_topik_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/judul_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/h1_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginBottom="4dp"
+                            android:textIsSelectable="true"
+                            app:fontFamily="@font/ubuntu_bold"
+                            android:textSize="32dp"
+                            android:textColor="@color/outerSpace"
+                            android:text=""
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/h2_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            app:fontFamily="@font/ubuntu_medium"
+                            android:textIsSelectable="true"
+                            android:textSize="16dp"
+                            android:textColor="@color/outerSpace"
+                            android:text=""
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/h3_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            app:fontFamily="@font/ubuntu_medium"
+                            android:textIsSelectable="true"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text=""
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/h4_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            app:fontFamily="@font/ubuntu_medium"
+                            android:textIsSelectable="true"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text=""
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/h5_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            app:fontFamily="@font/ubuntu_bold"
+                            android:textIsSelectable="true"
+                            android:textSize="24dp"
+                            android:textColor="@color/outerSpace"
+                            android:text=""
+                            android:visibility="gone"/>
+
+                        <WebView
+                            android:id="@+id/tafsir_web"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:scrollbars="none"/>
+
+                        <TextView
+                            android:id="@+id/tafsir_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:textIsSelectable="true"
+                            app:fontFamily="@font/ubuntu"
+                            android:textSize="16dp"
+                            app:lineHeight="24dp"
+                            android:textColor="@color/outerSpace"
+                            android:text=""
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/h6_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            app:fontFamily="@font/ubuntu_bold"
+                            android:textIsSelectable="true"
+                            android:textSize="24dp"
+                            android:textColor="@color/outerSpace"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/numbering_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:textIsSelectable="true"
+                            app:fontFamily="@font/ubuntu"
+                            android:textSize="16dp"
+                            app:lineHeight="24dp"
+                            android:textColor="@color/outerSpace"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tafsir2_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:textIsSelectable="true"
+                            app:fontFamily="@font/ubuntu"
+                            android:textSize="16dp"
+                            app:lineHeight="24dp"
+                            android:textColor="@color/outerSpace"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/footnote_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="28dp"
+                            android:src="@color/outerSpace"
+                            android:visibility="gone"/>
+
+                        <WebView
+                            android:id="@+id/footnote_web"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:scrollbars="none"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/footnote_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:textIsSelectable="true"
+                            app:fontFamily="@font/ubuntu"
+                            android:textSize="14dp"
+                            app:lineHeight="18dp"
+                            android:textColor="@color/outerSpace"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="92dp"
+                            android:src="@color/lightGray"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp">
+
+                            <TextView
+                                android:id="@+id/juz_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                app:fontFamily="@font/uthman_taha"
+                                android:text="الجُزْءُ الأَوَّلُ"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:id="@+id/juz_no_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                app:fontFamily="@font/uthman_taha"
+                                android:text="﴾١﴿ُ"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

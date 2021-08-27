@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4b7155</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#222222</color>
+    <color name="hint">#9E9E9E</color>
+    <color name="antiFlashWhite">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ashGrey">#B2B2B2</color>
+    <color name="outerSpace">#484848</color>
+    <color name="sonicSilver">#767676</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightGray">#D1D3D4</color>
+    <color name="ghostWhite">#F8F8F8</color>
+    <color name="red">#7c2522</color>
+    <color name="gainsboro">#DBDBDB</color>
+    <color name="quickSilver">#A7A7A7</color>
+    <color name="isabelline">#EBEBEB</color>
+</resources>

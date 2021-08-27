@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/help_shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/lightGray" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="74dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/gainsboro"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/gainsboro"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/gainsboro"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/gainsboro"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/gainsboro"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/gainsboro"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/gainsboro"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/gainsboro"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/gainsboro"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/gainsboro"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/gainsboro"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/gainsboro"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/gainsboro"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gainsboro"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/help_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:visibility="gone"/>
+
+</RelativeLayout>

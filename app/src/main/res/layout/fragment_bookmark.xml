@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bookmark_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="24dp"
+                android:text="Bookmark"
+                android:textSize="28dp"
+                android:textColor="@color/outerSpace"
+                app:fontFamily="@font/ubuntu_bold"/>
+
+            <LinearLayout
+                android:id="@+id/no_bookmark_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/bookmark_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/outerSpace"
+                    android:textSize="16dp"
+                    android:lineHeight="20dp"
+                    android:text="Tandai bacaan anda dengan menekan tombol bookmark pada bacaan tafsir."
+                    app:fontFamily="@font/ubuntu"/>
+
+                <ImageView
+                    android:id="@+id/bookmark_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="302dp"
+                    android:src="@drawable/no_bookmark"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bookmark_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="18dp"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"
+                android:clickable="true"
+                android:focusable="true"
+                android:scrollbars="none"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/bookmark_img"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

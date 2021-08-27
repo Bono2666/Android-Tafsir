@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_back_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/search_button"
+            android:layout_width="192dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_radius_24"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/search_icon"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/cari_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/search_icon"
+                android:maxLines="1"
+                app:fontFamily="@font/ubuntu_bold"
+                android:text="Surat"
+                android:textSize="14dp"
+                android:textColor="@color/outerSpace"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar_back_search">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/juz_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/juz_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="26dp"
+                    android:background="@drawable/stroke_radius_24">
+
+                    <TextView
+                        android:id="@+id/juz_text_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="Juz"
+                        android:textSize="14dp"
+                        android:textColor="@color/outerSpace"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/surat_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/stroke_radius_24"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/surat_text_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="Surat"
+                        android:textSize="14dp"
+                        android:textColor="@color/outerSpace"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/judul_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="24dp"
+                app:fontFamily="@font/ubuntu_bold"
+                android:textSize="24dp"
+                android:text="Pilih tafsir berdasarkan surat"
+                android:textColor="@color/outerSpace"
+                app:lineHeight="32dp"/>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/surat_shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="148dp"
+                                android:layout_height="200dp"
+                                android:layout_marginRight="12dp"
+                                app:cardCornerRadius="12dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/lightGray"/>
+
+                            </android.support.v7.widget.CardView>
+
+                            <ImageView
+                                android:layout_width="52dp"
+                                android:layout_height="9dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="132dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="46dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="148dp"
+                                android:layout_height="200dp"
+                                android:layout_marginRight="12dp"
+                                app:cardCornerRadius="12dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/lightGray"/>
+
+                            </android.support.v7.widget.CardView>
+
+                            <ImageView
+                                android:layout_width="52dp"
+                                android:layout_height="9dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="132dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="46dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="148dp"
+                                android:layout_height="200dp"
+                                android:layout_marginRight="12dp"
+                                app:cardCornerRadius="12dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/lightGray"/>
+
+                            </android.support.v7.widget.CardView>
+
+                            <ImageView
+                                android:layout_width="52dp"
+                                android:layout_height="9dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="132dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="46dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="148dp"
+                                android:layout_height="200dp"
+                                android:layout_marginRight="12dp"
+                                app:cardCornerRadius="12dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/lightGray"/>
+
+                            </android.support.v7.widget.CardView>
+
+                            <ImageView
+                                android:layout_width="52dp"
+                                android:layout_height="9dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="132dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                            <ImageView
+                                android:layout_width="46dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/gainsboro"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+<!--            GridLayout hrs di dalam RelativeLayout biar data baris kedua bisa keliatan-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/surat_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="16dp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
